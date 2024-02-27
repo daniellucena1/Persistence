@@ -20,7 +20,6 @@ public class App {
         auto.setAnoFabricacao(2016);
 
         EntityManager em = JPAUtil.getEntityManager();
-
         Query q = em.createQuery("select a from Automovel a", Automovel.class);
 
         List<Automovel> autos = q.getResultList();
