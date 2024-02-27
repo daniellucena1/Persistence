@@ -21,7 +21,6 @@ public class App {
 
         EntityManager em = JPAUtil.getEntityManager();
         Query q = em.createQuery("select a from Automovel a", Automovel.class);
-
         List<Automovel> autos = q.getResultList();
         
         for(Automovel a : autos)
